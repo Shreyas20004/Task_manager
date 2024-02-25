@@ -20,7 +20,22 @@ class _MyHomepageState extends State<MyHomepage> {
 
 AppBar _buildAppBar(){
   return AppBar(
-    backgroundColor: Colors.white,
+    backgroundColor: kwhite,
+    elevation: 0,
+    title: Row(
+      children:<Widget> [
+        Container(
+          margin: EdgeInsets.only(left: 10,top: 5),
+          height:45,
+          width: 45,
+          decoration: BoxDecoration(
+            color: klightgrey,
+            borderRadius: BorderRadius.circular(10)
+
+          ),
+        )
+      ]
+    )
 
   );
 }
