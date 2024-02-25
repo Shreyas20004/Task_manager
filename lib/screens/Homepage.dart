@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import  'package:tms/Widgets/constatant.dart';
 
 class MyHomepage extends StatefulWidget {
@@ -13,7 +14,44 @@ class _MyHomepageState extends State<MyHomepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _buildAppBar(),
-     
+     bottomNavigationBar: Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(30),
+          topRight: Radius.circular(30),
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.2),
+            blurRadius: 10,
+            spreadRadius: 5,
+          )
+        ]
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(30),
+          topRight: Radius.circular(30),
+        ),
+        child: BottomNavigationBar(
+          backgroundColor: kwhite,
+          selectedItemColor: Colors.blueAccent,
+          unselectedItemColor: Colors.grey,
+          items: [
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.home_rounded,size: 30),
+              label: "Home",
+            ),
+            const BottomNavigationBarItem(
+               icon:Icon(Icons.person_rounded,size: 30),
+              label: "Person",
+            )
+            )
+          ]
+          
+        )
+      ),
+     ),
     );
   }
 }
@@ -33,9 +71,35 @@ AppBar _buildAppBar(){
             borderRadius: BorderRadius.circular(10)
 
           ),
-        )
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(10),
+            child: Image.asset('assets/img1.jpeg'),
+
+          ),
+        ),
+        SizedBox(width: 10),
+        Text(
+          'Hello, User',
+          style: TextStyle(
+            color: Colors.grey.shade600,
+            fontSize: 22,
+            fontWeight: FontWeight.bold
+          ),
+         )
       ]
     )
-
-  );
+    ,actions: <Widget>[
+      IconButton( 
+        icon: Icon(
+          Icons.more_vert,
+          color: Colors.grey.shade600,
+          size:35,
+        )
+        ,onPressed: (){},   
+      )       
+     ],
+   );
 }
+    
+
+  
