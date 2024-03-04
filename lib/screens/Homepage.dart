@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import  'package:tms/Widgets/constatant.dart';
+import 'package:tms/screens/ProfilePage.dart';
 
 class MyHomepage extends StatefulWidget {
   const MyHomepage({super.key});
@@ -12,6 +13,7 @@ class MyHomepage extends StatefulWidget {
 class _MyHomepageState extends State<MyHomepage> {
   List<Widget> pages=[
     Homepage(),
+    ProfilePage(),
   ];
   int activeIndex=0;
   @override
@@ -130,7 +132,20 @@ AppBar _buildAppBar(){
 }
     
 
-  
+
+class Homepage extends StatefulWidget {
+  const Homepage({super.key});
+
+  @override
+  State<Homepage> createState() => _HomepageState();
+}
+
+class _HomepageState extends State<Homepage> {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}  
     
 
   
