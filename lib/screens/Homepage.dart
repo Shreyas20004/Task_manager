@@ -101,6 +101,20 @@ AppBar _buildAppBar(){
             fontSize: 22,
             fontWeight: FontWeight.bold
           ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(10),
+            child: Image.asset('assets/img1.jpeg'),
+
+          ),
+        ),
+        SizedBox(width: 10),
+        Text(
+          'Hello, User',
+          style: TextStyle(
+            color: Colors.grey.shade600,
+            fontSize: 22,
+            fontWeight: FontWeight.bold
+          ),
          )
       ]
     )
@@ -116,6 +130,9 @@ AppBar _buildAppBar(){
      ],
    );
 }
+    
+
+  
     
 
   
