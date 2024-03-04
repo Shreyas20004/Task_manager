@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:tms/Widgets/Premium.dart';
 import  'package:tms/Widgets/constatant.dart';
 import 'package:tms/screens/ProfilePage.dart';
 
@@ -143,7 +144,12 @@ class Homepage extends StatefulWidget {
 class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        GoPremium(),
+      ],
+    );
   }
 }  
     
