@@ -52,6 +52,27 @@ class _GoPremiumState extends State<GoPremium> {
                   )
                 ),
                 SizedBox(width: he*0.015,),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children:[
+                    Text("Go Premium",style: TextStyle(
+                      color: Color.fromARGB(255,22,23,22),
+                      fontSize: 20,
+                      fontWeight: FontWeight.w500,
+                    ),
+                    ),
+                  ],
+                ),
+                Expanded(child: Container()),
+                IconButton(
+                icon : const Icon(Icons.arrow_forward_ios,
+                color:Colors.grey,
+                size: 30,
+                 ),
+                 onPressed: (){},
+               )
+
               ],
             )
           ),

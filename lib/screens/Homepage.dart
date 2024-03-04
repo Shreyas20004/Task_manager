@@ -70,7 +70,7 @@ class _MyHomepageState extends State<MyHomepage> {
     child: Icon(Icons.add,color: kwhite,size: 35,),
     ),
     floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-    body: _pages[activeIndex],
+    body: pages[activeIndex],
      );
      
   }
