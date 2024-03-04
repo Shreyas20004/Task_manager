@@ -93,7 +93,9 @@ AppBar _buildAppBar(){
 
           ),
         ),
-        SizedBox(width: 10),
+        SizedBox(
+          width: 20
+          ),
         Text(
           'Hello, User',
           style: TextStyle(
@@ -101,12 +103,8 @@ AppBar _buildAppBar(){
             fontSize: 22,
             fontWeight: FontWeight.bold
           ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(10),
-            child: Image.asset('assets/img1.jpeg'),
-
-          ),
-        ),
+         ),
+        
         SizedBox(width: 10),
         Text(
           'Hello, User',
@@ -116,7 +114,7 @@ AppBar _buildAppBar(){
             fontWeight: FontWeight.bold
           ),
          )
-      ]
+      ],
     )
     ,actions: <Widget>[
       IconButton( 
