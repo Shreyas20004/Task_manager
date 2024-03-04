@@ -28,6 +28,14 @@ class _GoPremiumState extends State<GoPremium> {
             end: Alignment.bottomRight,
             )
           ),
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(he *0.002),
+              color: Colors.grey[300],
+              
+
+            ),
+          ),
         ),
       ],
     );
