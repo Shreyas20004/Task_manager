@@ -70,6 +70,7 @@ class _MyHomepageState extends State<MyHomepage> {
     child: Icon(Icons.add,color: kwhite,size: 35,),
     ),
     floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+    body: _pages[activeIndex],
      );
      
   }
@@ -147,7 +148,10 @@ class _HomepageState extends State<Homepage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        GoPremium(),
+        Padding(
+          padding: const EdgeInsets.only(right:8.0,left: 8.0,top: 15.0),
+          child: GoPremium(),
+        ),
       ],
     );
   }

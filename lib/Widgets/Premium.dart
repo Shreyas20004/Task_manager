@@ -32,9 +32,28 @@ class _GoPremiumState extends State<GoPremium> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(he *0.002),
               color: Colors.grey[300],
-              
-
             ),
+            padding: EdgeInsets.all(he * 0.012),
+            child:Row(
+              children: [
+                Container(
+                  height: he * 0.05,
+                  width: he * 0.05,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(he *0.02),
+                    color: Colors.grey[300],
+
+                  ),
+                  child:ColorFiltered(
+                    colorFilter:
+                     ColorFilter.mode(Color.fromARGB(255, 204, 198, 198)
+                    .withOpacity(0.6),BlendMode.srcATop),
+                    child: const Icon(Icons.workspace_premium_outlined, size: 30,color:MyThemeColor.textColor,)
+                  )
+                ),
+                SizedBox(width: he*0.015,),
+              ],
+            )
           ),
         ),
       ],
