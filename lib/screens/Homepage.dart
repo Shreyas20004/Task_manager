@@ -1,4 +1,7 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:tms/Widgets/Premium.dart';
 import  'package:tms/Widgets/constatant.dart';
@@ -149,9 +152,21 @@ class _HomepageState extends State<Homepage> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.only(right:8.0,left: 8.0,top: 15.0),
+          padding: const EdgeInsets.only(right:8.0,left: 8.0,top: 15.0, bottom:10.0),
           child: GoPremium(),
         ),
+        Container(
+          padding: const EdgeInsets.all(15),
+          child: Text(
+            'Tasks',
+            style:TextStyle(
+              color:Colors.grey.shade600,
+              fontSize: 22,
+              fontWeight: FontWeight.bold
+            ),
+          ),
+        ),
+        Expanded(child: Container())
       ],
     );
   }
