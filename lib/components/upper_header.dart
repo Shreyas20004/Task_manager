@@ -16,7 +16,9 @@ Widget upperHeader(String text,BuildContext context, bool isIcon, required Widge
         width: he*0.03,
       ),
       customText(text, 28),
-      Expanded(child: Container(),)
+      Expanded(child: Container()),
+      isIcon? Icon(Icons.search,size: 30,color: Colors.black,)
+      :Container(),
     ]
   )
   );
