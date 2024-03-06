@@ -9,9 +9,9 @@ class Tasks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 15),
+      padding: const EdgeInsets.symmetric(horizontal: 15),
       child: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2, mainAxisSpacing: 10, crossAxisSpacing: 10),
           itemBuilder: (context, index) => tasklist[index].isLast
               ? buildAddTask()
@@ -24,10 +24,10 @@ class Tasks extends StatelessWidget {
 Widget buildAddTask() {
   return DottedBorder(
       borderType: BorderType.RRect,
-      radius: Radius.circular(10),
+      radius: const Radius.circular(10),
       color: Colors.grey.shade300,
       strokeWidth: 2,
-      dashPattern: [10, 10],
+      dashPattern: const [10, 10],
       child: Center(
           child: Icon(
         Icons.add,
