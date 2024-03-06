@@ -1,5 +1,6 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
+import 'package:tms/Widgets/constatant.dart';
 import 'package:tms/modals/Task_modal.dart';
 
 class Tasks extends StatelessWidget {
@@ -66,7 +67,34 @@ Widget buildTask(
         SizedBox(
           width: 20,
         ),
+        Row(
+          children: [
+            buildTaskStatus(Colors.white54, taskList.btncolor, '${taskList.left} left'),
+            SizedBox(
+              width: 5,
+            ),
+            buildTaskStatus(kwhite, taskList.iconcolor, '${taskList.done} done'),
+          ],
+        ),
       ],
+    ),
+  );
+}
+
+Widget buildTaskStatus(Color bgcolor,Color txtColor, String txt){
+  return Container(
+    padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+    decoration: BoxDecoration(
+      color: bgcolor,
+      borderRadius: BorderRadius.circular(15),
+    ),
+    child: Text(
+      txt,
+      style: TextStyle(
+        color: txtColor,
+        fontSize: 16,
+        fontWeight: FontWeight.w500,
+      ),
     ),
   );
 }
