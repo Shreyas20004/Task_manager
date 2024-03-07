@@ -10,9 +10,13 @@ class menuPage extends StatefulWidget {
 class _menuPageState extends State<menuPage> {
   @override
   Widget build(BuildContext context) {
+    var he = MediaQuery.of(context).size.height;
     return SafeArea(child: Scaffold(
-      body: Center(
-        child: Text("Menu Page") ,)
-    ),);
+    backgroundColor: Colors.white,
+    body:Padding(
+      padding:  EdgeInsets.only(left: he *0.03,top: he *0.03),
+    )
+    )
+    );
   }
 }
