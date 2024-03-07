@@ -10,6 +10,9 @@ class menuPage extends StatefulWidget {
 class _menuPageState extends State<menuPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SafeArea(child: Scaffold(
+      body: Center(
+        child: Text("Menu Page") ,)
+    ),);
   }
 }
