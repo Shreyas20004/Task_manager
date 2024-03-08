@@ -14,7 +14,13 @@ class _menuPageState extends State<menuPage> {
     return SafeArea(child: Scaffold(
     backgroundColor: Colors.white,
     body:Padding(
-      padding:  EdgeInsets.only(left: he *0.03,top: he *0.03),
+      padding:  EdgeInsets.only(left: he *0.03,right: he *0.03),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Padding (padding:  EdgeInsets.only(top: he *0.03,bottom: he *0.03)),
+        ],
+      ),
     )
     )
     );
