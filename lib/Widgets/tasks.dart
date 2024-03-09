@@ -27,7 +27,7 @@ class Tasks extends StatelessWidget {
         radius: const Radius.circular(20),
         color: Colors.grey.shade600,
         strokeWidth: 2,
-        dashPattern: [10, 10],
+        dashPattern: const [10, 10],
         child: Center(
             child: Icon(
           Icons.add,

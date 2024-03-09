@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:tms/screens/Homepage.dart';
 
-class menuPage extends StatefulWidget {
-  const menuPage({super.key});
+class MenuPage extends StatefulWidget {
+  const MenuPage({super.key});
 
   @override
-  State<menuPage> createState() => _menuPageState();
+  State<MenuPage> createState() => _MenuPageState();
 }
 
-class _menuPageState extends State<menuPage> {
+class _MenuPageState extends State<MenuPage> {
   @override
   Widget build(BuildContext context) {
     var he = MediaQuery.of(context).size.height;
@@ -30,7 +30,7 @@ class _menuPageState extends State<menuPage> {
                           Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Homepage(),
+                              builder: (context) => const Homepage(),
                             ),
                           );
                         },
@@ -47,7 +47,7 @@ class _menuPageState extends State<menuPage> {
               SizedBox(
                 height: he * 0.13,
               ),
-              Text(
+              const Text(
                 "Contact Us",
                 style: TextStyle(
                   fontSize: 30,
@@ -56,7 +56,7 @@ class _menuPageState extends State<menuPage> {
               SizedBox(
                 height: he*0.03,
               ),
-              Text(
+              const Text(
                 "About Us",
                 style: TextStyle(
                   fontSize: 30,
@@ -65,7 +65,7 @@ class _menuPageState extends State<menuPage> {
               SizedBox(
                 height: he*0.03,
               ),
-              Text(
+              const Text(
                 "Help",
                 style: TextStyle(
                   fontSize: 30,
@@ -74,7 +74,7 @@ class _menuPageState extends State<menuPage> {
               SizedBox(
                 height: he*0.03,
               ),
-              Text(
+              const Text(
                 "Settings",
                 style: TextStyle(
                   fontSize: 30,
@@ -83,7 +83,7 @@ class _menuPageState extends State<menuPage> {
               SizedBox(
                 height: he*0.03,
               ),
-              Text(
+              const Text(
                 "Logout",
                 style: TextStyle(
                   fontSize: 30,

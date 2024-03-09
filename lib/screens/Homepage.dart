@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -18,8 +19,8 @@ class MyHomepage extends StatefulWidget {
 
 class _MyHomepageState extends State<MyHomepage> {
   List<Widget> pages = [
-    Homepage(),
-    ProfilePage(),
+    const Homepage(),
+    const ProfilePage(),
   ];
   int activeIndex = 0;
   @override
@@ -28,7 +29,7 @@ class _MyHomepageState extends State<MyHomepage> {
       appBar: _buildAppBar(context),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(30),
               topRight: Radius.circular(30),
             ),
@@ -40,7 +41,7 @@ class _MyHomepageState extends State<MyHomepage> {
               )
             ]),
         child: ClipRRect(
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
               topLeft: Radius.circular(30),
               topRight: Radius.circular(30),
             ),
@@ -49,11 +50,11 @@ class _MyHomepageState extends State<MyHomepage> {
               selectedItemColor: Colors.blueAccent,
               unselectedItemColor: Colors.grey,
               items: const [
-                const BottomNavigationBarItem(
+                BottomNavigationBarItem(
                   icon: Icon(Icons.home_rounded, size: 30),
                   label: "Home",
                 ),
-                const BottomNavigationBarItem(
+                BottomNavigationBarItem(
                   icon: Icon(Icons.person_rounded, size: 30),
                   label: "Person",
                 ),
@@ -71,7 +72,7 @@ class _MyHomepageState extends State<MyHomepage> {
           borderRadius: BorderRadius.circular(20),
         ),
         backgroundColor: kdark,
-        child: Icon(
+        child: const Icon(
           Icons.add,
           color: kwhite,
           size: 35,
@@ -90,7 +91,7 @@ AppBar _buildAppBar(BuildContext context) {
     title: Row(
       children: <Widget>[
         Container(
-          margin: EdgeInsets.only(left: 10, top: 5),
+          margin: const EdgeInsets.only(left: 10, top: 5),
           height: 45,
           width: 45,
           decoration: BoxDecoration(
@@ -100,7 +101,7 @@ AppBar _buildAppBar(BuildContext context) {
             child: Image.asset('assets/img1.jpeg'),
           ),
         ),
-        SizedBox(width: 20),
+        const SizedBox(width: 20),
         Text(
           'Hello, User',
           style: TextStyle(
@@ -108,7 +109,7 @@ AppBar _buildAppBar(BuildContext context) {
               fontSize: 22,
               fontWeight: FontWeight.bold),
         ),
-        SizedBox(width: 10),
+        const SizedBox(width: 10),
         Text(
           'Hello, User',
           style: TextStyle(
@@ -126,7 +127,7 @@ AppBar _buildAppBar(BuildContext context) {
           size: 35,
         ),
         onPressed: () {
-          Navigator.push(context as BuildContext,MaterialPageRoute (builder:(context) => menuPage()));
+          Navigator.push(context as BuildContext,MaterialPageRoute (builder:(context) => const MenuPage()));
         },
       )
     ],

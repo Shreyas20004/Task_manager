@@ -10,14 +10,14 @@ Widget upperHeader(String text,BuildContext context, bool isIcon, {required Widg
         onTap: (){
           Navigator.push(context as BuildContext,MaterialPageRoute(builder:(context) =>page)); 
         },
-        child: Icon(Icons.arrow_back_rounded,size: 30,color: Colors.black,),
+        child: const Icon(Icons.arrow_back_rounded,size: 30,color: Colors.black,),
       ),
       SizedBox(
         width: he*0.03,
       ),
       customText(text, 28),
       Expanded(child: Container()),
-      isIcon? Icon(Icons.search,size: 30,color: Colors.black,)
+      isIcon? const Icon(Icons.search,size: 30,color: Colors.black,)
       :Container(),
     ]
   )

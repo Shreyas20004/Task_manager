@@ -46,13 +46,13 @@ class _GoPremiumState extends State<GoPremium> {
                   ),
                   child:ColorFiltered(
                     colorFilter:
-                     ColorFilter.mode(Color.fromARGB(255, 204, 198, 198)
+                     ColorFilter.mode(const Color.fromARGB(255, 204, 198, 198)
                     .withOpacity(0.6),BlendMode.srcATop),
                     child: const Icon(Icons.workspace_premium_outlined, size: 30,color:MyThemeColor.textColor,)
                   )
                 ),
                 SizedBox(width: he*0.015,),
-                Column(
+                const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children:[
