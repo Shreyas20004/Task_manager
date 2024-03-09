@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:tms/screens/Homepage.dart';
 
 class MenuPage extends StatefulWidget {
@@ -54,7 +55,7 @@ class _MenuPageState extends State<MenuPage> {
                 ),
               ),
               SizedBox(
-                height: he*0.03,
+                height: he * 0.03,
               ),
               const Text(
                 "About Us",
@@ -63,7 +64,7 @@ class _MenuPageState extends State<MenuPage> {
                 ),
               ),
               SizedBox(
-                height: he*0.03,
+                height: he * 0.03,
               ),
               const Text(
                 "Help",
@@ -72,7 +73,7 @@ class _MenuPageState extends State<MenuPage> {
                 ),
               ),
               SizedBox(
-                height: he*0.03,
+                height: he * 0.03,
               ),
               const Text(
                 "Settings",
@@ -81,12 +82,15 @@ class _MenuPageState extends State<MenuPage> {
                 ),
               ),
               SizedBox(
-                height: he*0.03,
+                height: he * 0.03,
               ),
-              const Text(
-                "Logout",
-                style: TextStyle(
-                  fontSize: 30,
+              GestureDetector(
+                onTap: () => SystemNavigator.pop(),
+                child: const Text(
+                  "Logout",
+                  style: TextStyle(
+                    fontSize: 30,
+                  ),
                 ),
               ),
             ],
