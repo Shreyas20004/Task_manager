@@ -109,14 +109,6 @@ AppBar _buildAppBar(BuildContext context) {
               fontSize: 22,
               fontWeight: FontWeight.bold),
         ),
-        const SizedBox(width: 10),
-        Text(
-          'Hello, User',
-          style: TextStyle(
-              color: Colors.grey.shade600,
-              fontSize: 22,
-              fontWeight: FontWeight.bold),
-        )
       ],
     ),
     actions: <Widget>[

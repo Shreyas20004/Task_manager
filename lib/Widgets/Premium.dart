@@ -21,7 +21,7 @@ class _GoPremiumState extends State<GoPremium> {
             borderRadius: BorderRadius.circular(he *0.002),
             gradient: const LinearGradient(
             colors: [
-            Color (0xffFDC838),
+            Color (0xffFDC830),
             Color (0xffF37335),
             ],
             begin:Alignment.topLeft,
