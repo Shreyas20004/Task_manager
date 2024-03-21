@@ -1,6 +1,6 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
-import 'package:tms/Widgets/constatant.dart';
+import 'package:tms/Widgets/constant.dart';
 import 'package:tms/modals/Task_modal.dart';
 
 class Tasks extends StatelessWidget {

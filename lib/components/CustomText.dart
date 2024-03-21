@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tms/Widgets/constatant.dart';
+import 'package:tms/Widgets/constant.dart';
 
 Widget customText(String text,double size){
   return Text(text,
