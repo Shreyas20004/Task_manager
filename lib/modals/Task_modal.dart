@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:tms/Widgets/constant.dart';
 
 class Task {
-  IconData ? icon;
-  String ? title;
-  Color ? bgcolor;
-  Color ? iconcolor;
-  Color ? btncolor;
-  num ? left;
-  num ? done;
+  IconData? icon;
+  String? title;
+  Color? bgcolor;
+  Color? iconcolor;
+  Color? btncolor;
+  num? left;
+  num? done;
   bool isLast;
 
   Task(
@@ -50,6 +50,16 @@ class Task {
         btncolor: kYellow,
         left: 1,
         done: 4,
+        isLast: true,
+      ),
+      Task(
+        icon: Icons.person_rounded,
+        title: 'Personal',
+        bgcolor: kBlueLight,
+        iconcolor: kBlueDark,
+        btncolor: kBlue,
+        left: 5,
+        done: 3,
         isLast: true,
       ),
     ];
