@@ -50,7 +50,7 @@ class Task {
         btncolor: kYellow,
         left: 1,
         done: 4,
-        isLast: true,
+        isLast: false,
       ),
       Task(
         icon: Icons.person_rounded,
