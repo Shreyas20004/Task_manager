@@ -52,10 +52,10 @@ class Tasks extends StatelessWidget {
             Icon(
               taskList.icon,
               color: taskList.iconcolor,
-              size: 30,
+              size: 20,
             ),
             const SizedBox(
-              height: 30,
+              height: 20,
             ),
             Text(
               taskList.title.toString(),
@@ -85,7 +85,7 @@ class Tasks extends StatelessWidget {
 
   Widget _buildTaskStatus(Color bgcolor, Color txtColor, String txt) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
       decoration: BoxDecoration(
         color: bgcolor,
         borderRadius: BorderRadius.circular(15),
