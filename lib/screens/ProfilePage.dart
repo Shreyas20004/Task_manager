@@ -43,7 +43,7 @@ class _ProfilePageState extends State<ProfilePage> {
               child: TextFormField(
                   decoration: InputDecoration(
                 contentPadding: const EdgeInsets.only(left: 10, top: 12),
-                hintText: 'Amogh',
+                hintText: 'XYZ',
                 hintStyle: TextStyle(
                   color: Colors.grey[700],
                   fontSize: 16,
@@ -80,7 +80,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 keyboardType: TextInputType.name,
                   decoration: InputDecoration(
                 contentPadding: const EdgeInsets.only(left: 10, top: 12),
-                hintText: 'Saxena',
+                hintText: 'ABCD',
                 hintStyle: TextStyle(
                   color: Colors.grey[700],
                   fontSize: 16,
@@ -264,7 +264,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 Expanded(
                   child: Container(),
                 ),
-                Icon(
+                const Icon(
                   Icons.arrow_forward_ios,
                   color: Colors.blueAccent,
                   size: 21,
@@ -287,7 +287,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 Expanded(
                   child: Container(),
                 ),
-                Icon(
+                const Icon(
                   Icons.arrow_forward_ios,
                   color: Colors.blueAccent,
                   size: 21,
@@ -299,7 +299,7 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
             GestureDetector(
               onTap: (){},
-              child: Text(
+              child: const Text(
                 'Log Out',
                 style: TextStyle(
                   color: Colors.blueAccent,

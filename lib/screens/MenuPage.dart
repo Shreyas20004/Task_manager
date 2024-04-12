@@ -1,7 +1,11 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/widgets.dart';
 import 'package:tms/screens/Homepage.dart';
 import 'package:tms/screens/Settings.dart';
+import 'package:tms/screens/HelpPage.dart';
+import 'package:tms/screens/ContactPage.dart';
 
 class MenuPage extends StatefulWidget {
   const MenuPage({super.key});
@@ -51,10 +55,18 @@ class _MenuPageState extends State<MenuPage> {
                   SizedBox(
                     height: he * 0.13,
                   ),
-                  const Text(
-                    "Contact Us",
-                    style: TextStyle(
-                      fontSize: 30,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const ContactUs())
+                    );
+                    },
+                    child: const Text(
+                      "Contact Us",
+                      style: TextStyle(
+                        fontSize: 30,
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -69,10 +81,16 @@ class _MenuPageState extends State<MenuPage> {
                   SizedBox(
                     height: he * 0.03,
                   ),
-                  const Text(
-                    "Help",
-                    style: TextStyle(
-                      fontSize: 30,
+                  GestureDetector(
+                    onTap:(){Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const HelpPage())
+                    );},
+                    child: const Text(
+                      "Help",
+                      style: TextStyle(
+                        fontSize: 30,
+                      ),
                     ),
                   ),
                   SizedBox(
@@ -83,7 +101,7 @@ class _MenuPageState extends State<MenuPage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => settingsPage(),
+                            builder: (context) => const settingsPage(),
                           ));
                     },
                     child: const Text(
