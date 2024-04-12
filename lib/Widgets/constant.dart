@@ -13,9 +13,8 @@ const Color kRedDark = Color(0xFFF8BDC0);
 const Color kRedLight = Color(0xFFFCF0F0);
 
 const Color kwhite = Colors.white;
-Color kdark = Colors.grey.shade900;
-
-Color klightgrey = Colors.grey.shade200;
+ Color kdark = Colors.grey.shade900;
+ Color klightgrey = Colors.grey.shade200;
 
 class MyThemeColor {
   static const Color backgroundColor = Colors.white;

@@ -65,12 +65,12 @@ class _MyHomepageState extends State<MyHomepage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(10),
         ),
         backgroundColor: kdark,
-        child: const Icon(
+        child:  Icon(
           Icons.add,
-          color: kwhite,
+          color:klightgrey ,
           size: 35,
         ),
       ),
@@ -141,7 +141,7 @@ class _HomepageState extends State<Homepage> {
           child: GoPremium(),
         ),
         Container(
-          padding: const EdgeInsets.all(15),
+          padding: const EdgeInsets.all(10),
           child: Text(
             'Tasks',
             style: TextStyle(

@@ -1,7 +1,7 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
-import 'package:tms/Widgets/constant.dart';
 import 'package:tms/modals/Task_modal.dart';
+import 'package:tms/widgets/constant.dart';
 
 class Tasks extends StatelessWidget {
   final taskList = Task.generateTasks();
@@ -27,7 +27,7 @@ class Tasks extends StatelessWidget {
         radius: const Radius.circular(20),
         color: Colors.grey.shade600,
         strokeWidth: 2,
-        dashPattern: const [10, 10],
+        dashPattern: [10, 10],
         child: Center(
             child: Icon(
           Icons.add,
@@ -52,10 +52,10 @@ class Tasks extends StatelessWidget {
             Icon(
               taskList.icon,
               color: taskList.iconcolor,
-              size: 20,
+              size: 30,
             ),
             const SizedBox(
-              height: 20,
+              height: 30,
             ),
             Text(
               taskList.title.toString(),
@@ -85,7 +85,7 @@ class Tasks extends StatelessWidget {
 
   Widget _buildTaskStatus(Color bgcolor, Color txtColor, String txt) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+      padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
       decoration: BoxDecoration(
         color: bgcolor,
         borderRadius: BorderRadius.circular(15),
