@@ -18,7 +18,7 @@ class ContactUs extends StatelessWidget {
           Padding(padding: EdgeInsets.only(left: he * 0.03, right: he * 0.03),
           child: Column(
             children: [
-              upperHeader('Contact Us', context, true, page: MenuPage()),
+              upperHeader('Contact Us', context, true, page: const MenuPage()),
               SizedBox(
                 height: he * 0.02,
               ),

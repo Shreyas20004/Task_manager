@@ -141,8 +141,8 @@ class _ProfilePageState extends State<ProfilePage> {
               Expanded(
                 child: Container(),
                 ),
-              TextButton(onPressed: (){}, child: Text('Change Username', style: TextStyle(color:Colors.blueAccent),))
-              ,Icon(Icons.edit, color: Colors.blueAccent,size: 18,)
+              TextButton(onPressed: (){}, child: const Text('Change Username', style: TextStyle(color:Colors.blueAccent),))
+              ,const Icon(Icons.edit, color: Colors.blueAccent,size: 18,)
             ],),
             SizedBox(
               height: he * 0.02,
@@ -189,8 +189,8 @@ class _ProfilePageState extends State<ProfilePage> {
               Expanded(
                 child: Container(),
                 ),
-              TextButton(onPressed: (){}, child: Text('Change Number', style: TextStyle(color:Colors.blueAccent),)),
-              Icon(Icons.edit, color: Colors.blueAccent,size: 18,)
+              TextButton(onPressed: (){}, child: const Text('Change Number', style: TextStyle(color:Colors.blueAccent),)),
+              const Icon(Icons.edit, color: Colors.blueAccent,size: 18,)
             ],),
             SizedBox(
               height: he * 0.02,
@@ -237,8 +237,8 @@ class _ProfilePageState extends State<ProfilePage> {
               Expanded(
                 child: Container(),
                 ),
-              TextButton(onPressed: (){}, child: Text('Change Email ID', style: TextStyle(color:Colors.blueAccent),)),
-              Icon(Icons.arrow_forward_ios, color: Colors.blueAccent,size: 18,)
+              TextButton(onPressed: (){}, child: const Text('Change Email ID', style: TextStyle(color:Colors.blueAccent),)),
+              const Icon(Icons.arrow_forward_ios, color: Colors.blueAccent,size: 18,)
             ],),
 
             SizedBox(

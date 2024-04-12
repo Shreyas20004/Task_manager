@@ -46,7 +46,7 @@ class _GoPremiumState extends State<GoPremium> {
                   color: Colors.grey[300],
                 ),
                 child: ColorFiltered(
-                  colorFilter: ColorFilter.mode(Color.fromARGB(255, 255, 254, 254)
+                  colorFilter: ColorFilter.mode(const Color.fromARGB(255, 255, 254, 254)
                             .withOpacity(0.6), BlendMode.srcATop),
                   child: const Icon(Icons.workspace_premium_outlined, size: 30,color: MyThemeColor.textColor,),
                 ),
