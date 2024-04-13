@@ -209,7 +209,7 @@ class _ProfilePageState extends State<ProfilePage> {
             Row(children: [
               SizedBox(
                 height: he * 0.045,
-                width: he * 0.24,
+                width: he * 0.20,
                 child: TextFormField(
                   keyboardType: TextInputType.emailAddress,
                     decoration: InputDecoration(
