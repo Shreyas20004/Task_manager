@@ -1,5 +1,6 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
+import 'package:tms/Widgets/detail.dart';
 import 'package:tms/modals/Task_modal.dart';
 import 'package:tms/widgets/constant.dart';
 
@@ -40,47 +41,53 @@ class Tasks extends StatelessWidget {
     BuildContext context,
     Task taskList,
   ) {
-    return Container(
-        padding: const EdgeInsets.all(15),
-        decoration: BoxDecoration(
-          color: taskList.bgcolor,
-          borderRadius: BorderRadius.circular(10),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Icon(
-              taskList.icon,
-              color: taskList.iconcolor,
-              size: 30,
-            ),
-            const SizedBox(
-              height: 30,
-            ),
-            Text(
-              taskList.title.toString(),
-              style: TextStyle(
-                color: Colors.grey[600],
-                fontSize: 18,
-                fontWeight: FontWeight.w500,
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => DetailPage(taskList)));
+      },
+      child: Container(
+          padding: const EdgeInsets.all(15),
+          decoration: BoxDecoration(
+            color: taskList.bgcolor,
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Icon(
+                taskList.icon,
+                color: taskList.iconcolor,
+                size: 30,
               ),
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            Row(
-              children: [
-                _buildTaskStatus(Colors.white54, taskList.iconcolor!,
-                    '${taskList.left} left'),
-                const SizedBox(
-                  width: 5,
+              const SizedBox(
+                height: 30,
+              ),
+              Text(
+                taskList.title.toString(),
+                style: TextStyle(
+                  color: Colors.grey[600],
+                  fontSize: 18,
+                  fontWeight: FontWeight.w500,
                 ),
-                _buildTaskStatus(
-                    kwhite, taskList.iconcolor!, '${taskList.done} done')
-              ],
-            ),
-          ],
-        ));
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Row(
+                children: [
+                  _buildTaskStatus(Colors.white54, taskList.iconcolor!,
+                      '${taskList.left} left'),
+                  const SizedBox(
+                    width: 5,
+                  ),
+                  _buildTaskStatus(
+                      kwhite, taskList.iconcolor!, '${taskList.done} done')
+                ],
+              ),
+            ],
+          )),
+    );
   }
 
   Widget _buildTaskStatus(Color bgcolor, Color txtColor, String txt) {

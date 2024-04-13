@@ -8,6 +8,7 @@ class Task {
   Color? iconcolor;
   Color? btncolor;
   num? left;
+  List<Map<String, dynamic>>? desc;
   num? done;
   bool isLast;
 
@@ -18,6 +19,7 @@ class Task {
       this.iconcolor,
       this.btncolor,
       this.left,
+      this.desc,
       this.done,
       this.isLast = false});
   static List<Task> generateTasks() {
@@ -29,6 +31,43 @@ class Task {
         iconcolor: kBlueDark,
         btncolor: kBlue,
         left: 5,
+        desc: [
+          {
+            'time': '9:00 AM',
+            'title': 'Create a video',
+            'slot': '9:00 AM - 10:00 AM',
+            't1Color': kRedDark,
+            'bgcolor': kRedLight,
+          },
+          {
+            'time': '10:00 AM',
+            'title': 'Watching a movie',
+            'slot': '10:00 AM - 11:00 AM',
+            't1Color': kRedDark,
+            'bgcolor': kRedLight,
+          },
+          {
+            'time': '11:00 AM',
+            'title': '',
+            'slot': '',
+            't1Color': kRedDark,
+            'bgcolor': kRedLight,
+          },
+          {
+            'time': '12:00 PM',
+            'title': 'Go to the Gym',
+            'slot': '12:00 PM - 1:00 PM',
+            't1Color': kRedDark,
+            'bgcolor': kRedLight,
+          },
+          {
+            'time': '1:00 AM',
+            'title': 'Call with client',
+            'slot': '1:00 PM - 2:00 PM',
+            't1Color': Colors.grey.withOpacity(0.3),
+            'bgcolor': kYellowLight,
+          },
+        ],
         done: 3,
         isLast: false,
       ),
